@@ -4,6 +4,7 @@ window.addEventListener('load', () =>{
 
     pads.forEach((pad, index) =>{
         pad.addEventListener('click', function(){
+            sounds[index].currentTime = 0; //sets the current time to zero for enabling multiple clicks
             sounds[index].play();
         });
     });
